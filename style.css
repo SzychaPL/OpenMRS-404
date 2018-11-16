@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(Pictures/ignasi_pattern_s.png);
+    /* Background pattern from Toptal Subtle Patterns */
+    /*--requirement CC--*/
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #000;
+}
+
+.logo {
+    margin-left: 80px;
+    width: 25%;
+}
+
+.logoImg {
+    width: 25vh;
+    cursor: pointer;
+}
+
+.numberInfo {
+    font-size: 65px;
+    text-align: center;
+}
+
+.Picture {
+    text-align: center;
+}
+
+.Picture img {
+    padding: 50px 10px 20px 10px;
+}
+
+.Picture h2 {
+    padding: 20px;
+    line-height: 200%;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.Picture p {
+    font-size: 30px;
+}
+
+.underButton {
+    padding: 80px;
+    text-align: center;
+
+}
+
+.underButton p {
+    font-size: 28px;
+    padding-bottom: 18px;
+}
+
+.underButton button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    display: block;
+    height: 45px;
+    width: 185px;
+    border-radius: 80px 80px 80px 80px;
+    border: none;
+    letter-spacing: 2px;
+    background-color: #00C3FF;
+    box-shadow: 1px 1px 1px #004e66;
+}
+
+
+
+.underButton button:hover {
+    cursor: pointer;
+    background-color: #009ccc;
+}
+
+@media (max-width: 768px)
+
+/*landscape for mobile and tablets*/
+    {
+    .logo {
+        transform: translate(-35%);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .logoImg {
+        width: 75vh;
+    }
+
+    .Picture img {
+        padding: 15px 0 0 0;
+    }
+
+    .underButton {
+        padding: 60px;
+    }
+}
+
+@media (orientation:portrait) and (max-height: 860px) {
+
+    .logo {
+        transform: translate(-67%);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .logoImg {
+        width: 50vh;
+    }
+
+    .numberInfo {
+        transform: translate(22%);
+    }
+
+    .Picture img {
+        padding: 10px 0 5px 0px;
+    }
+
+    .underButton {
+        transform: translate(15%);
+    }
+}
